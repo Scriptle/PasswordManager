@@ -32,3 +32,4 @@ CREATE TABLE IF NOT EXISTS users (id integer PRIMARY KEY,email VARCHAR,password 
 `VARBINARY` means that the value held must be binary and the length can vary.
 ### Creating the GUI
 Now, that the database has been created, we need some sort of user interface so that the user can interact with the program. We used NetBeans' GUI Builder to create the GUI for a program. It allowed us to easily build the GUI using drag-and-drop tools and not have to worry about the code. A sample is shown below.
+![enter image description here](https://raw.githubusercontent.com/Scriptle/PasswordManager/master/GUI.png)
