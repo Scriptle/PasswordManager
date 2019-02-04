@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS users (id integer PRIMARY KEY,email VARCHAR,password 
 ### Creating the GUI
 Now, that the database has been created, we need some sort of user interface so that the user can interact with the program. We used NetBeans' GUI Builder to create the GUI for a program. It allowed us to easily build the GUI using drag-and-drop tools and not have to worry about the code. A sample is shown below.
 ![enter image description here](https://raw.githubusercontent.com/Scriptle/PasswordManager/master/GUI.png)
+## 3rd February 2019
 ### Creating the Register Method
 With the GUI made, we now need users to be able to register so that they can use the program. This involves the user entering their email and creating a password. We need to store this data in the database on the *users* table. Before we can do that, we need to hash the password with a salt for security reasons. Once hashed, we use another SQL statement to store the data.
 ```SQL
