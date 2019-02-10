@@ -3,6 +3,9 @@
 
 ---
 
+<hr>
+<h2 id="layout-postdate---2019-01-27">layout: post<br>
+date:   2019-01-27</h2>
 <h2 id="th-january-2019">27th January 2019</h2>
 <h3 id="creating-the-main-database">Creating the Main Database</h3>
 <p>The first stage of security comes from creating an account on our Password Manager that all your passwords will be tied to. But, to allow the user to be able to register and log in to program, we need a database to store their credentials. We chose to use an SQLite database as it is embedded in the program as oppose to being a client-server database engine. This meant that we didn’t need a database server, instead the database is saved locally within the program (for now). In order to work with the SQLite database we needed to use sqlite-jdbc, a Java SQLite library. This library allows us to connect to the database and manipulate it as required e.g. adding a new record to a table.</p>
