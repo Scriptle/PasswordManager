@@ -1,3 +1,9 @@
+---
+layout: post
+title: Adding Email And Password Validation
+date: 2019-02-10
+---
+
 ### Modifying the Login and Register Page Layouts
 The login and register pages' layout were a complete mess so we used the *GridBagLayout* to keep all the GUI elements in order based on a customisable grid. This makes the pages easier for the user to navigate improving the usability of our program. Moreover, we have an error message label which the text can be changed based on the error and should pop up when an error occurs e.g. email address is not valid. The problem was though, it was visible on the login/register page from the start when the user hadn't even typed anything in. To rectify this, we hid the error label at the start of the program and only made it visible when the error occurred.
 ### Adding Email and Password Validation
