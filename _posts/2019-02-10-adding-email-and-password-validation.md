@@ -20,3 +20,5 @@ To break it down, the regex string above means for a password to be valid it mus
  - `(?=.*[!\"£$€%^&*()@#/?])` contain at least one of the following special characters: !\"£$€%^&*()@#/?
  - `.{8,}` be at least eight characters long
 
+### Creating the Home Page
+With the login sorted, we now need a home page. To do this, we simply add another panel to the *rootPanel* and as we have a *CardLayout*, we can simply use `cardLayout.show(rootPanel, "home");` to display the home page once the user has logged in. The home page is blank for now but will contain a list of all the user's usernames and passwords for various sites and the option to add another password to the list.
