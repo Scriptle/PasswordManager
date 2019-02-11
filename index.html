@@ -11,8 +11,9 @@ layout: default
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div class="date">
-        {{ post.date | date: '%d %B %Y' }}
+        {{ page.date | date: "%e %B %Y" }}
       </div>
+      <br>
       
       <div class="entry">
         {{ post.excerpt }}
