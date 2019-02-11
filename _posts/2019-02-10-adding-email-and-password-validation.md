@@ -4,7 +4,7 @@ The login and register pages' layout were a complete mess so we used the *GridBa
 When users register to use our program, we need accurate information and not any random nonsense. To ensure as much accuracy as possible, we need to use validation. By using validation we can check if what the user has entered matches a specific format. To do this, we used Regex (regular expression). By using regex, we can check if a string matches a certain pattern. Here's an example of how we used regex to check if the password the user created is valid:
 ```java
 public static boolean isPasswordValid(char[] password) {
-    String regex = "((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!\"£$€%^&*()@#/?]).{8,})"; // Password must contain at least one digit, at least one lower case letter, at least one upper case letter, at least one special character and must be at least 8 characters long.
+    String regex = "((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!\"£$€%^&*()@#/?]).{8,})";
     Pattern pattern = Pattern.compile(regex);
     Matcher matcher = pattern.matcher(new String(password));
     boolean isValid = matcher.matches();
